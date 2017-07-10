@@ -1,0 +1,27 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\GoogleVR\Demos\Scripts\GVRDemo\GVRDemoManager.cs">
+    <Files>
+      <File FileName="Assets\GoogleVR\Scripts\Controller\GvrPointerManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\GoogleVR\Shaders\Silhouette-Outlined Diffuse.shader" Line="1" Column="1" />
+      <File FileName="Assets\torus.cs" Line="1" Column="1" />
+      <File FileName="Assets\GoogleVR\Demos\Scripts\DemoInputManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\GoogleVR\Scripts\GvrViewer.cs" Line="1" Column="1" />
+      <File FileName="Assets\GoogleVR\Scripts\UI\GvrReticlePointer.cs" Line="47" Column="14" />
+      <File FileName="Assets\points.cs" Line="1" Column="1" />
+      <File FileName="Assets\GoogleVR\Scripts\Controller\GvrArmModel.cs" Line="1" Column="1" />
+      <File FileName="Assets\GoogleVR\Scripts\Pose3D.cs" Line="1" Column="1" />
+      <File FileName="Assets\GoogleVR\Legacy\Scripts\Internal\GvrPostRender.cs" Line="1" Column="1" />
+      <File FileName="Assets\GoogleVR\Scripts\Controller\GvrController.cs" Line="1" Column="1" />
+      <File FileName="Assets\GoogleVR\Scripts\Utilities\GvrFPS.cs" Line="1" Column="1" />
+      <File FileName="Assets\GoogleVR\Scripts\EventSystem\GvrPointerPhysicsRaycaster.cs" Line="1" Column="1" />
+      <File FileName="Assets\GoogleVR\Scripts\EventSystem\GvrBasePointerRaycaster.cs" Line="1" Column="1" />
+      <File FileName="Assets\GoogleVR\Demos\Scripts\GVRDemo\Teleport.cs" Line="1" Column="1" />
+      <File FileName="Assets\GoogleVR\Demos\Scripts\GVRDemo\GVRDemoManager.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
