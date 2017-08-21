@@ -158,6 +158,7 @@
      <Compile Include="Assets\Ongui.cs" />
      <Compile Include="Assets\PlaneScript.cs" />
      <Compile Include="Assets\TimerCanvas.cs" />
+     <Compile Include="Assets\fdt.cs" />
      <Compile Include="Assets\points.cs" />
      <Compile Include="Assets\torus.cs" />
      <None Include="Assets\Plugins\Android\proguard-gvr.txt" />

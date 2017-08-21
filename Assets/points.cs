@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class points : MonoBehaviour {
-	public GameObject sphere;
+	public GameObject objeto;
 	public float maxTimeToAppear;
 	public float maxTimeToBlink;
 	private float timeleftAppear = 1;
@@ -42,17 +42,17 @@ public class points : MonoBehaviour {
 			mr.enabled = false;
 			timeleftBlink = 0;
 			blinking = false;
-			timeleftAppear = Random.Range (1, 3);
+			timeleftAppear = Random.Range ((float) 0.1, maxTimeToAppear);
 		} else {
 			timeleftAppear -= Time.deltaTime;
 
-			if (timeleftAppear < 0 && timeleftBlink >= 0 && !blinking) {
+			if (timeleftAppear <= 0 && timeleftBlink >= 0 && !blinking) {
 				transform.position = Random.insideUnitCircle * 2.65f;
-				transform.position = new Vector3(transform.position.x, transform.position.y + 1, 3);
+				transform.position = new Vector3 (transform.position.x, transform.position.y + 1, 3);
 				mr.enabled = true;
 				blinking = true;
 				blinkTimer = 1;
-				timeleftBlink = Random.Range (0, 0.5f);
+				timeleftBlink = Random.Range ((float) 0.1, maxTimeToBlink);
 				answers.Add (new Answer {
 					point = new Vector2 (transform.position.x, transform.position.y),
 					hit = false,
@@ -60,8 +60,8 @@ public class points : MonoBehaviour {
 				});
 			}
 		}
-		//Debug.Log (timeleftAppear);
-		//Debug.Log (timeleftBlink);
+		Debug.Log ("timeleftAppear " + timeleftAppear);
+		Debug.Log ("timeleftBlink " + timeleftBlink);
 	}
 
 	void OnGUI()
