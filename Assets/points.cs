@@ -5,7 +5,9 @@ using UnityEngine;
 public class points : MonoBehaviour {
 	public GameObject objeto;
 	public float maxTimeToAppear;
+	public float minTimeToAppear;
 	public float maxTimeToBlink;
+	public float minTimeToBlink;
 	private float timeleftAppear = 1;
 	private float timeleftBlink = 1;
 	private MeshRenderer mr;
@@ -42,7 +44,7 @@ public class points : MonoBehaviour {
 			mr.enabled = false;
 			timeleftBlink = 0;
 			blinking = false;
-			timeleftAppear = Random.Range ((float) 0.1, maxTimeToAppear);
+			timeleftAppear = Random.Range (minTimeToAppear, maxTimeToAppear);
 		} else {
 			timeleftAppear -= Time.deltaTime;
 
@@ -52,7 +54,7 @@ public class points : MonoBehaviour {
 				mr.enabled = true;
 				blinking = true;
 				blinkTimer = 1;
-				timeleftBlink = Random.Range ((float) 0.1, maxTimeToBlink);
+				timeleftBlink = Random.Range (minTimeToBlink, maxTimeToBlink);
 				answers.Add (new Answer {
 					point = new Vector2 (transform.position.x, transform.position.y),
 					hit = false,
